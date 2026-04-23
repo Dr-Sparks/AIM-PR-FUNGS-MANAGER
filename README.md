@@ -2,8 +2,6 @@
 
 Der AIM Prüfungs-Manager hilft dabei, Fragen zu verwalten, Weiterbildungsgänge pro Semester abzubilden, Prüfungen zusammenzustellen, Prüfungen zu speichern und Backups zu importieren oder zu exportieren.
 
-## Schnellstart für Nicht-Technische Personen
-
 ## Empfohlener Weg: Fertige App benutzen
 
 Wenn eine fertige Version bereitgestellt wurde, ist das der einfachste Weg.
