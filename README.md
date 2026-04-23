@@ -2,24 +2,6 @@
 
 Der AIM Prüfungs-Manager hilft dabei, Fragen zu verwalten, Weiterbildungsgänge pro Semester abzubilden, Prüfungen zusammenzustellen, Prüfungen zu speichern und Backups zu importieren oder zu exportieren.
 
-## Empfohlener Weg: Fertige App benutzen
-
-Wenn eine fertige Version bereitgestellt wurde, ist das der einfachste Weg.
-
-### Mac oder Windows
-1. Auf GitHub in den Bereich `Releases` gehen
-2. Die passende Datei für dein Gerät herunterladen
-3. Die ZIP-Datei entpacken
-4. Den entpackten Ordner öffnen
-5. Die App starten
-
-Vorteil:
-- kein Node nötig
-- keine Terminal-Befehle nötig
-- direkt startbar wie ein normales Programm
-
-## Alternative: Projektordner starten
-
 Diesen Weg nur verwenden, wenn keine fertige App-Datei vorhanden ist.
 
 ### 1. Projekt herunterladen
