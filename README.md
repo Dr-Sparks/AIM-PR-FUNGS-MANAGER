@@ -4,13 +4,37 @@ Der AIM Prüfungs-Manager hilft dabei, Fragen zu verwalten, Weiterbildungsgänge
 
 ## Schnellstart für Nicht-Technische Personen
 
+## Empfohlener Weg: Fertige App benutzen
+
+Wenn eine fertige Version bereitgestellt wurde, ist das der einfachste Weg.
+
+### Mac oder Windows
+1. Auf GitHub in den Bereich `Releases` gehen
+2. Die passende Datei für dein Gerät herunterladen
+3. Die ZIP-Datei entpacken
+4. Den entpackten Ordner öffnen
+5. Die App starten
+
+Vorteil:
+- kein Node nötig
+- keine Terminal-Befehle nötig
+- direkt startbar wie ein normales Programm
+
+## Alternative: Projektordner starten
+
+Diesen Weg nur verwenden, wenn keine fertige App-Datei vorhanden ist.
+
 ### 1. Projekt herunterladen
 1. Auf GitHub oben auf `Code` klicken
 2. `Download ZIP` wählen
 3. Die ZIP-Datei herunterladen
 4. Die ZIP-Datei entpacken
 
-### 2. App starten
+### 2. Voraussetzungen
+
+Für diesen Weg muss `Node.js` auf dem Computer installiert sein.
+
+### 3. App starten
 
 #### Mac
 1. Den entpackten Ordner öffnen
@@ -86,6 +110,18 @@ Die Backups enthalten:
 - Semesteransicht
 - gespeicherte Prüfungen
 - aktuelle offene Prüfung
+
+## Desktop-App erstellen
+
+Für Personen, die die App selbst als richtige Desktop-App bauen möchten:
+
+### Mac
+- `npm run build:desktop:mac`
+
+### Windows
+- `npm run build:desktop:win`
+
+Die fertigen Dateien landen danach im Ordner `release`.
 
 ## Leere Startdateien
 

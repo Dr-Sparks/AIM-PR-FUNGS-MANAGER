@@ -2,10 +2,18 @@
   "name": "aim-exam-app",
   "private": true,
   "version": "1.0.0",
+  "description": "AIM Prüfungs-Manager als React- und Desktop-App",
+  "author": "Dr-Sparks",
   "type": "module",
+  "main": "electron/main.cjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:web": "vite build",
+    "build:desktop": "npm run build:web && electron-builder",
+    "build:desktop:mac": "npm run build:web && electron-builder --mac",
+    "build:desktop:win": "npm run build:web && electron-builder --win",
+    "build:desktop:dir": "npm run build:web && electron-builder --dir",
     "preview": "vite preview",
     "test": "node --test AIMExamManager.helpers.test.js"
   },
@@ -16,6 +24,44 @@
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
+    "electron": "^41.3.0",
+    "electron-builder": "^26.8.1",
     "vite": "^5.4.10"
+  },
+  "build": {
+    "appId": "ch.aim.pruefungsmanager",
+    "productName": "AIM Prüfungs-Manager",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json",
+      "README.md",
+      "AIM_Leervorlage.json",
+      "AIM_Leervorlage.xlsx"
+    ],
+    "extraMetadata": {
+      "main": "electron/main.cjs"
+    },
+    "artifactName": "${productName}-${version}-${os}-${arch}.${ext}",
+    "mac": {
+      "category": "public.app-category.education",
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
   }
 }
